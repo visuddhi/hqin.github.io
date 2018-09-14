@@ -1,2 +1,2 @@
-# hqin.github.io
+# visuddhi.github.io
 A website
