@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
-<script src="crime_2012_december.json" ></script>
+<script src="baltimore-crime-data.json"></script>
 
 <div id="map-canvas" style="height:600px;width:800px"></div>
 
 <script type="text/javascript">
 
+ /*
 function point(crime){
     var point = {};
-    point.latitude = crime[26];
-    point.longitude = crime[28];
+    point.latitude = crime.lat;
+    point.longitude = crime.lon;
     return point;
 }
 
-var points = chicago.data.map(point);
+
+var points = baltimore.data.map(point);
+*/
 
 </script>
-<script src="heatmap.js"></script>
+<script src="heatmap-BALTO.js"></script>
 </html>
