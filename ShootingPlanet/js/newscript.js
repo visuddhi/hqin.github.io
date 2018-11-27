@@ -219,7 +219,7 @@ function  BossDie() {
 
 
 function changeURL(){
-	window.history.pushState({},0,'http://'+window.location.host+'/'+gameSt.score);		
+	window.history.pushState({},0,'https://hanzhangqin.club/'+'?score='+gameSt.score);		
 }
 
 		
@@ -233,6 +233,8 @@ function endGame(){
 	alert("Game Over!");
 	
 	alert("Final Score："+gameSt.score);
+
+	changeURL();
 
 	keySt.toUp = keySt.toDown = keySt.toLeft = keySt.toRight = keySt.toLSpeed = keySt.toFire =  false;
 
@@ -256,7 +258,7 @@ function endGame(){
 
 	$('.layout1').show();
 
-	changeURL();
+	
 
 }
 
