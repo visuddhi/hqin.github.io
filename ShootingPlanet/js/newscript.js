@@ -218,6 +218,13 @@ function  BossDie() {
 }
 
 
+function changeURL(){
+	window.history.pushState({},0,'http://'+window.location.host+'/'+gameSt.score);		
+}
+
+		
+
+
 //结束游戏
 function endGame(){
     gameSt.playing = gameSt.boss = false;
@@ -248,6 +255,8 @@ function endGame(){
 	resetData();
 
 	$('.layout1').show();
+
+	changeURL();
 
 }
 
