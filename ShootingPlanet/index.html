@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+	<!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/obj.css">
+
+
+	<!--[if lt IE 9]>
+	<!--<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+	<!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+	<![endif] -->
+
+
+	<style>
+
+
+	</style>
+	<script src="js/lib.js"></script>
+	<!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
+
+	<title>DooMissO Danmaku Shooting Game</title>
+</head>
+<body>
+	<!--Initial-->
+	<div class="layout layout1">
+		<p class="currDifficult">Difficulty：<span class="currDiff"></span></p>
+		<h1 id="startBtn2" class="btn-style">Start Game</h1>
+		<h1 id="gameConfig" class="btn-style">Game Settings</h1>
+		<h1 id="readme" class="btn-style">Help</h1>
+
+
+	</div>
+	<div class="layout layout2">
+		<center>
+			<h2>Game Settings</h2>
+			<h3>Keyboard configurations</h3><br>
+			<h3 class="keySet">　　Up　　　  　 Key:<span id="UPKeySet"></span></h3>
+			<h3 class="keySet">　　Down　　　   Key:<span id="DNKeySet"></span></h3>
+			<h3 class="keySet">　　Left　　　　 Key:<span id="LTKeySet"></span></h3>
+			<h3 class="keySet">　　Right　　　　Key:<span id="RTKeySet"></span></h3>
+			<h3 class="keySet">　　Low Speed　  Key:<span id="LSKeySet"></span></h3>
+			<h3 class="keySet">　　Back to Default</h3>
+			<h3>Adjust difficulty</h3>
+			<span class="selectDiff" title="If you even cannot play this...">Monkey</span><span class="selectDiff" title="Well this is normal.">Human</span><span class="selectDiff" title="U sure?">Lunatic</span>
+			<input type="hidden" id="difficult" value="Human">
+
+		</center>
+
+		<h1 class="returnMain btn-style">Return</h1>
+	</div>
+
+	<!--Help-->
+	<div class="layout layout3">
+		<center><h2>Help</h2></center>
+		<p class="howToPlay">
+		1. Have fun！
+		<br> 
+		2. Blockchain integration (global leaderboard!) coming soon.
+		<br> 
+		3. More advanced game features coming...
+		</p>
+		<img id="control" src="img/operate.png" />
+		<h1 class="returnMain btn-style">Return</h1>
+	</div>
+
+
+
+
+
+
+
+
+	<!--				Main Panel					-->
+	<section id="gameScreen">
+	<!-- 自机 -->
+
+		<div id="p_ship" class="player1">
+			<div id="laser"></div>
+			<div id="p_spot"></div>
+		</div>
+		<!-- <p class="bullet" style="top: 200px; left:200px"></p> --><!-- 活靶子 -->
+
+	
+		
+	</section>
+
+
+
+	<!--			Right Panel			-->
+	<aside>
+		<button id="startBtn" >Start Game</button><br>
+
+		<button id="endTest"  onclick="endGame()">End Game</button><br><br>
+
+		<p>Life:<span id="hitCount">50</span></p><br>
+		<p>Graze:<span id="zijiPos">0</span></p><br>
+		<p>Score:<span id="score">0</span></p><br><br>
+		<p># of bullets: <span id="dmkcount">0</span></p>
+		<h4>ShootingPlanet ver 0.0, by visuddhi</h4>
+
+		<p>Past Versions<br>
+		</p><br><br>
+
+	</aside>
+
+
+
+
+
+
+</body>
+<script>
+
+</script>
+<script src="js/keymap.js"></script>
+<script src="js/animateEasing.js"></script>
+<script src="js/bulletClass.js"></script>
+<script src="js/newscript.js"></script>
+<script src="js/objAction.js"></script>
+<script src="js/eventListener.js"></script>
+</html>
